@@ -1,0 +1,11 @@
+%h2 Composición del Activo
+%table.table.table-striped
+  %thead
+    %tr
+      %th  Concepto
+      %th= @period
+  %tbody
+    - @accounts.each do |description, value|
+      %tr
+        %td= description
+        %td= value

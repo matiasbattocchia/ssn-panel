@@ -1,0 +1,20 @@
+development:
+  adapter: jdbcmssql
+  driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  url: 'jdbc:sqlserver://192.168.0.218;DatabaseName=PaneldeControl'
+  username: pcontrol
+  password: ctrl2013
+
+entidades:
+  adapter: jdbcmssql
+  driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  url: 'jdbc:sqlserver://192.168.0.2;DatabaseName=Entidades'
+  username: mbattocchia
+  password: bato2013
+
+sinensup:
+  adapter: jdbcmssql
+  driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  url: 'jdbc:sqlserver://192.168.0.218;DatabaseName=Sinensup'
+  username: mbattocchia
+  password: bato2013

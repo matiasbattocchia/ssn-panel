@@ -1,0 +1,19 @@
+- content_for :second_level_layout do
+  .row-fluid
+    .span12
+      .page-header
+        %h1
+          = @company.id
+          %small= @company.name
+          = @company.status.denomination
+
+  .row-fluid
+    .span3
+      %ul.nav.nav-tabs.nav-stacked
+        %li= link_to 'Datos', company_path(@company)
+        %li= link_to 'Activo', company_path(@company) + '/assets'
+
+    .span9
+      = yield
+
+= render :template => 'layouts/application'
